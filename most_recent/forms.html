@@ -10,13 +10,99 @@
 
 <body>
     <h1>Forms</h1>
-
     <form action="/search">
-        <input type="text" name="" id="">
-        <input type="password">
-        <input type="text">
-        <input type="color">
-        <input type="text">
+        <button type="button">DONT!!</button>
+        <div>
+            <label for="username">Enter your username:</label>
+            <input type="text" placeholder="username" name="username" id="username">
+        </div>
+        <p></p>
+        <div>
+            <label for="password">Enter your password:</label>
+            <input type="password" placeholder="password" name="password" id="password">
+        </div>
+        <p>
+            <label for="color">Enter a color:</label>
+            <input type="color" name="color" id="color">
+        </p>
+        <div>
+            <label for="number">Enter a number:</label>
+            <input type="number" name="number" id="number">
+        </div>
+        <p></p>
+        <div>
+            <label for="time">Enter a time:</label>
+            <input type="time" name="time" id="time">
+        </div>
+        <button type="submit">Submit</button>
+        <input type="submit" name="" id="">
+    </form>
+
+    <h1>search reddit</h1>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q" id="">
+        <button>Search Reddit</button>
+    </form>
+    <h1>search google</h1>
+    <form action="https://www.google.com/search?">
+        <input type="text" name="q" id="">
+        <button>search google</button>
+    </form>
+    <h1>search youtube</h1>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="q" id="">
+        <button>search youtube</button>
+    </form>
+
+    <h2>More Inputus</h2>
+    <form action="/anime">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">Agree</label>
+        <p>
+            <div>
+                <label for="naruto">Naruto:</label>
+                <input type="radio" name="anime" id="naruto" value="nar">
+            </div>
+            <div>
+                <label for="attackontitan">Attack on Titan:</label>
+                <input type="radio" name="anime" id="attackontitan" value="aot">
+            </div>
+            <div>
+                <label for="bleach">Bleach:</label>
+                <input type="radio" name="anime" id="bleach" value="ble">
+            </div>
+        </p>
+        <button>Submit</button>
+        <p>
+            <label for="anime">Please select an Anime:</label>
+            <select name="anime" id="anime">
+                <option value="" selected>-please choose an option--</option>
+                <option value="naruto">Naruto</option>
+                <option value="bleach">Bleach</option>
+            </select>
+        </p>
+        <p>
+            <label for="anime_rating">Anime rating:</label>
+            <input type="range" name="anime_rating" id="rating" min="1" max="10" step="1" value="5">
+        </p>
+        <p>
+            <label for="desc">Decsribe yourself:</label>
+            <br>
+            <textarea name="description" id="desc" rows="5" cols="20" placeholder="description"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <h2>Validation</h2>
+    <form action="/dummy">
+        <label for="first">Enter first name</label>
+        <input type="text" name="first" id="first" required>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" minlength="5" maxlength="10" required>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <button>Submit</button>
+        </p>
     </form>
 </body>
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strava - Race Registration</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+
+<body>
+    <main>
+        <h1>Race Registation</h1>
+        <message>
+            <p>
+                <div>
+                    Email us with any questions or inquiries or call <a href="#nowhere">023-123-1230.</a>
+                </div>
+                <div>
+                    We would be happy to answer your
+                    questions
+                    and set up a meeting with you.
+                </div>
+                <div>
+                    Animepedia respects all user of the site.
+                </div>
+            </p>
+        </message>
+
+        <form action="/register">
+            <div>
+                <label for="first">First Name</label>
+                <input type="text" name="first" id="first" required minlength="3" maxlength="16">
+                <p></p>
+                <label for="last">Last Name</label>
+                <input type="text" name="last" id="last" required minlength="3" maxlength="16">
+            </div>
+            <p>
+                <p class="dodge">Select a Race:</p>
+
+                <div>
+                    <label for="5k">Fun Run 5K</label>
+                    <input type="radio" name="radio" id="5k" value="5k" checked>
+                </div>
+                <div>
+                    <label for="half">Half Marathon</label>
+                    <input type="radio" name="radio" id="half" value="half">
+                </div>
+                <div>
+                    <label for="full">Full Marathon</label>
+                    <input type="radio" name="radio" id="full" value="full">
+                </div>
+            </p>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <p></p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <p>
+                <div>
+                    <label for="age">Select Age Group</label>
+                    <select name="age" id="age" required>
+                        <option value="15-18">15-18</option>
+                        <option value="19-22">19-22</option>
+                        <option value="23-26">23-26</option>
+                    </select>
+                </div>
+            </p>
+            <p>
+                <div>
+                    <label for="reason">Reason for racing</label>
+                    <textarea name="reason" id="reason" cols="30" rows="5"></textarea>
+                </div>
+            </p>
+            <button>Register</button>
+        </form>
+    </main>
+    <h2>Thank you for Registering</h2>
+    <center>
+        <img src="pictures/twitter.png" alt="twitter logo">
+    </center>
+
+</body>
+
+</html>

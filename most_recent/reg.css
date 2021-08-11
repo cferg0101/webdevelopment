@@ -1,0 +1,47 @@
+body {
+    background-color: #ffffff;
+}
+
+main {
+    text-align: center;
+}
+
+
+
+h1 {
+    color: #588b8b;
+    text-decoration: black overline underline;
+    font-size: 35px;
+}
+
+h2 {
+    text-align: center;
+    color: #588b8b;
+    text-decoration: black overline underline;
+    font-size: 35px;
+}
+
+a {
+    color: #588b8b;
+    font-weight: bold;
+}
+
+img {
+    width: 75px;
+    height: 40px;
+}
+
+label {
+    margin: 5px;
+}
+
+.dodge {
+    color: #588b8b;
+    font-weight: bold;
+}
+
+button {
+    box-shadow: 10px -5px #588b8b;
+    font-size: 16px;
+    border: 2px solid #333;
+}

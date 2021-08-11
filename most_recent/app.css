@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: #00afb9 overline underline;
+    letter-spacing: 5px;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: #00afb9 underline;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    text-align: center;
+    line-height: 1;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff1e6;
+}
